@@ -79,14 +79,17 @@ img{
 h1{
     font-size: 1.8rem;
     font-weight: 800;
+    color: var(--color-dark);
 }
 
 h2{
     font-size: 1.4rem;
+    color: var(--color-dark);
 }
 
 h3{
     font-size: 0.87rem;
+    color: var(--color-dark);
 }
 
 h4{
@@ -243,6 +246,8 @@ main .date input[type="date"]{
     background: transparent;
     color: var(--color-dark);
 }
+
+/* -------INSIGHTS STYLING---------- */
 
 main .insights{
     display: grid;
@@ -470,7 +475,7 @@ main .recent-order a{
 }
 
 .right .sales-analytics .item{
-    background: white;
+    background: var(--color-white);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -617,6 +622,9 @@ main .recent-order a{
     main .recent-order table{
         width: 100%;
         margin: 0;
+    }
+    main .recent-order tbody tr td:last-child, main table tbody tr td:first-child{
+        display: none;
     }
     .right{
         width: 94%;
